@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Ionic Blank
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-card round>
+        <ion-item style="center">
+            <img src="../assets/imgs/google.png" round style="width: 50%;" alt=""/>
+        </ion-item>
+        <p><button ion-button color="primary" (click)="irBuscar()" full>Crear un Punto</button></p>
+        <p><button ion-button color="secondary" (click)="irListar()" full>Listar Mis puntos</button></p>
+    </ion-card>
 </ion-content>
